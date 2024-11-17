@@ -1,0 +1,8 @@
+{
+  "label": "Sujets",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Quelques sujets de Bac NSI"
+  }
+}

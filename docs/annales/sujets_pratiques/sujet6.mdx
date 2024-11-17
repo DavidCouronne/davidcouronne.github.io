@@ -1,0 +1,101 @@
+---
+title: Sujet 6 - NSI 2022
+description: Sujet 6 épreuve pratique Numérique et Science Informatique 2022
+sidebar_position: 7
+---
+
+import Tabs from '@theme/Tabs'
+import TabItem from '@theme/TabItem'
+
+## Sujet NSI 2022 - Sujet 6
+
+### Exercice 1
+
+<Tabs>
+  <TabItem value="sujet" label="Sujet" default>
+
+Écrire une fonction `maxi` qui prend en paramètre une liste `tab` de nombres entiers et renvoie un couple donnant le plus grand élément de cette liste, ainsi que l’indice de la première apparition de ce maximum dans la liste.
+
+Exemple :
+
+```python
+>>> maxi([1,5,6,9,1,2,3,7,9,8])
+(9,3)
+```
+
+  </TabItem>
+  <TabItem value="correction" label="Correction">
+
+```python linenums='1'
+def maxi(tab):
+    val_max = tab[0]
+    pos_max = 0
+    for i in range(len(tab)):
+        if tab[i] > val_max:
+            val_max = tab[i]
+            pos_max = i
+    return (val_max, pos_max)
+
+```
+
+  </TabItem>
+  
+</Tabs>
+
+### Exercice 2
+
+<Tabs>
+  <TabItem value="sujet" label="Sujet" default>
+
+La fonction `recherche` prend en paramètres deux chaines de caractères `gene` et
+`seq_adn` et renvoie `True` si on retrouve `gene` dans `seq_adn` et `False` sinon.
+Compléter le code Python ci-dessous pour qu’il implémente la fonction `recherche`.
+
+```python
+def recherche(gene, seq_adn):
+    n = len(seq_adn)
+    g = len(gene)
+    i = ...
+    trouve = False
+    while i < ... and trouve == ... :
+        j = 0
+        while j < g and gene[j] == seq_adn[i+j]:
+            ...
+        if j == g:
+            trouve = True
+        ...
+    return trouve
+```
+
+Exemples :
+
+```python
+>>> recherche("AATC", "GTACAAATCTTGCC")
+True
+>>> recherche("AGTC", "GTACAAATCTTGCC")
+False
+```
+
+  </TabItem>
+  <TabItem value="correction" label="Correction">
+
+```python linenums='1'
+def recherche(gene, seq_adn):
+    n = len(seq_adn)
+    g = len(gene)
+    i = 0
+    trouve = False
+    while i < n-g and trouve == False :
+        j = 0
+        while j < g and gene[j] == seq_adn[i+j]:
+            j += 1
+        if j == g:
+            trouve = True
+        i += 1
+    return trouve
+
+```
+
+  </TabItem>
+  
+</Tabs>

@@ -1,0 +1,168 @@
+---
+title: Sujet 5 - NSI 2022
+description: Sujet 5 épreuve pratique Numérique et Science Informatique 2022
+sidebar_position: 6
+---
+
+import Tabs from '@theme/Tabs'
+import TabItem from '@theme/TabItem'
+
+## Sujet NSI 2022 - Sujet 5
+
+### Exercice 1
+
+<Tabs>
+  <TabItem value="sujet" label="Sujet" default>
+
+Écrire une fonction `rechercheMinMax` qui prend en paramètre un tableau de nombres
+non triés `tab`, et qui renvoie la plus petite et la plus grande valeur du tableau sous la
+forme d’un dictionnaire à deux clés ‘min’ et ‘max’. Les tableaux seront représentés sous
+forme de liste Python.
+
+Exemples :
+
+```python
+>>> tableau = [0, 1, 4, 2, -2, 9, 3, 1, 7, 1]
+>>> resultat = rechercheMinMax(tableau)
+>>> resultat
+{'min': -2, 'max': 9}
+>>> tableau = []
+>>> resultat = rechercheMinMax(tableau)
+>>> resultat
+{'min': None, 'max': None}
+```
+
+  </TabItem>
+  <TabItem value="correction" label="Correction">
+
+```python linenums='1'
+def rechercheMinMax(tab):
+    if tab == []:
+        return {'min': None, 'max': None}
+    d = {}
+    d['min'] = tab[0]
+    d['max'] = tab[0]
+    for val in tab:
+        if val < d['min']:
+            d['min'] = val
+        if val > d['max']:
+            d['max'] = val
+    return d
+
+```
+
+  </TabItem>
+  
+</Tabs>
+
+### Exercice 2
+
+<Tabs>
+  <TabItem value="sujet" label="Sujet" default>
+
+On dispose d’un programme permettant de créer un objet de type `PaquetDeCarte`,
+selon les éléments indiqués dans le code ci-dessous.
+Compléter ce code aux endroits indiqués par `#A compléter`, puis ajouter des
+assertions dans l’initialiseur de `Carte`, ainsi que dans la méthode `getCarteAt()`.
+
+```python linenums='1'
+class Carte:
+    """Initialise Couleur (entre 1 a 4), et Valeur (entre 1 a 13)"""
+    def __init__(self, c, v):
+        self.Couleur = c
+        self.Valeur = v
+
+    """Renvoie le nom de la Carte As, 2, ... 10,
+       Valet, Dame, Roi"""
+    def getNom(self):
+        if ( self.Valeur > 1 and self.Valeur < 11):
+            return str( self.Valeur)
+        elif self.Valeur == 11:
+            return "Valet"
+        elif self.Valeur == 12:
+            return "Dame"
+        elif self.Valeur == 13:
+            return "Roi"
+        else:
+            return "As"
+
+    """Renvoie la couleur de la Carte (parmi pique, coeur, carreau, trefle"""
+    def getCouleur(self):
+        return ['pique', 'coeur', 'carreau', 'trefle' ][self.Couleur - 1]
+
+class PaquetDeCarte:
+    def __init__(self):
+        self.contenu = []
+
+    """Remplit le paquet de cartes"""
+    def remplir(self):
+	    ??? = [ ??? for couleur in range(1, ???) for valeur in range( 1, ???)]
+
+    """Renvoie la Carte qui se trouve a  la position donnee"""
+    def getCarteAt(self, pos):
+        if 0 <= pos < ??? :
+            return ???
+```
+
+Exemple :
+
+```python
+>>> unPaquet = PaquetDeCarte()
+>>> unPaquet.remplir()
+>>> uneCarte = unPaquet.getCarteAt(20)
+>>> print(uneCarte.getNom() + " de " + uneCarte.getCouleur())
+  8 de coeur
+```
+
+  </TabItem>
+  <TabItem value="correction" label="Correction">
+
+Attention, le code proposé ne respecte pas les standards de notation :
+
+- il ne faut pas de majuscules sur les noms des attributs
+- la docstring se place à l'intérieur de la fonction et non au dessus.
+
+```python linenums='1'
+class Carte:
+    """Initialise Couleur (entre 1 à 4), et Valeur (entre 1 à 13)"""
+    def __init__(self, c, v):
+        assert c in range(1,5)
+        assert v in range(1,14)
+        self.Couleur = c
+        self.Valeur = v
+
+    """Renvoie le nom de la Carte As, 2, ... 10, Valet, Dame, Roi"""
+    def getNom(self):
+        if (self.Valeur > 1 and self.Valeur < 11):
+            return str( self.Valeur)
+        elif self.Valeur == 11:
+            return "Valet"
+        elif self.Valeur == 12:
+            return "Dame"
+        elif self.Valeur == 13:
+            return "Roi"
+        else:
+            return "As"
+
+    """Renvoie la couleur de la Carte (parmi pique, coeur, carreau, trefle"""
+    def getCouleur(self):
+        return ['pique', 'coeur', 'carreau', 'trefle'][self.Couleur]
+
+class PaquetDeCarte:
+    def __init__(self):
+        self.contenu = []
+
+    """Remplit le paquet de cartes"""
+    def remplir(self):
+        self.contenu = [Carte(couleur, valeur) for couleur in range(1, 5) for valeur in range(1, 14)]
+
+    """Renvoie la Carte qui se trouve à la position donnée"""
+    def getCarteAt(self, pos):
+        if 0 <= pos < len(self.contenu) :
+            return self.contenu[pos]
+
+```
+
+  </TabItem>
+  
+</Tabs>

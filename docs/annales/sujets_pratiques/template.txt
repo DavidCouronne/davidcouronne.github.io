@@ -1,0 +1,41 @@
+---
+title: Sujet 1 - NSI 2022
+description: Sujet 1 épreuve pratique Numérique et Science Informatique 2022
+sidebar_position: 2
+---
+
+import Tabs from '@theme/Tabs'
+import TabItem from '@theme/TabItem'
+
+## Sujet NSI 2022 - Sujet 1
+
+### Exercice 1
+
+<Tabs>
+  <TabItem value="sujet" label="Sujet" default>
+
+
+
+  </TabItem>
+  <TabItem value="correction" label="Correction">
+
+
+
+  </TabItem>
+  
+</Tabs>
+
+### Exercice 2
+
+<Tabs>
+  <TabItem value="sujet" label="Sujet" default>
+
+
+  </TabItem>
+  <TabItem value="correction" label="Correction">
+
+
+
+  </TabItem>
+  
+</Tabs>

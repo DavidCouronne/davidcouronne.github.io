@@ -92,7 +92,7 @@ Notez qu'une valeur entière ou à virgule flottante sera toujours différente d
 
 L'expression `42 == '42'` prend la valeur `False`car Python considère que l'entier 42 est différent de la chaîne '42'.
 
-:::note Exemples avec <, >, <=et >=
+:::note Exemples
 
 ```python
 >>> 42 < 100

@@ -245,7 +245,7 @@ d'un objet sera toujours le nom de la classe qui l'a construit.
 
 Pour obtenir cette information, en Python on peut utiliser `type`.
 
-Par exemple print(type(p1)) doit vous donner : <class '**main**.Point'>.
+Par exemple print(type(p1)) doit vous donner : `<class '**main**.Point'>`.
 
 Ainsi, si j'appelle `p1.tracer()`, Python saura qu'il faut appeler la méthode `tracer()` de la classe Point
 en consultant le type de p1. En objet, on parle aussi d'**encapsulation**. Avec l'**encapsulation**, un objet

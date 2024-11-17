@@ -18,8 +18,8 @@ class Personnage:
     Un personnage du jeu vidéo
     """
     def __init__(self,genre,experience=0):  # Définition du constructeur
-        self.genre=genre                    # premier attribut : le genre (féminin, masculin, autre)
-        self.experience=experience          # deuxième attribut : l'expérience (évaluée par un nombre entier)
+        self.genre = genre                    # premier attribut : le genre (féminin, masculin, autre)
+        self.experience = experience          # deuxième attribut : l'expérience (évaluée par un nombre entier)
 
 ```
 

@@ -10,6 +10,13 @@ yarn install
 
 ## Local Development
 
+Sur un Mac:
+
+```console
+source $(brew --prefix nvm)/nvm.sh
+nvm use 20.10.0
+```
+
 ```console
 yarn start
 ```

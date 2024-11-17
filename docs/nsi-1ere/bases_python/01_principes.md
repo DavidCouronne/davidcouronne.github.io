@@ -25,15 +25,15 @@ Cet éditeur en ligne se compose d'un éditeur de script dans la partie et gauch
 Essayez:
 
 ```
->>> 2 + 2
-4
+>>> 2 + 5
+7
 ```
 
-En Python, `2 + 2` est appelé une **expression**, qui est le type d'instruction de programmation le plus basique dans le langage.
+En Python, `2 + 5` est appelé une **expression**, qui est le type d'instruction de programmation le plus basique dans le langage.
 
 Les expressions se composent de **valeurs** (telles que 2) et d'**opérateurs** (tels que +), et elles peuvent toujours **évaluer** (c'est-à-dire réduire) jusqu'à une seule valeur.
 
-Dans l'exemple précédent, `2 + 2` est évalué jusqu'à une seule valeur, 4. Une valeur unique sans opérateur est également considérée comme une expression, bien qu'elle ne s'évalue qu'à elle-même, comme illustré ici :
+Dans l'exemple précédent, `2 + 5` est évalué jusqu'à une seule valeur, 7. Une valeur unique sans opérateur est également considérée comme une expression, bien qu'elle ne s'évalue qu'à elle-même, comme illustré ici :
 
 ```
 >>> 2

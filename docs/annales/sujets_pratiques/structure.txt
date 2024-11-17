@@ -1,0 +1,14 @@
+import Tabs from '@theme/Tabs'
+import TabItem from '@theme/TabItem'
+
+<Tabs>
+  <TabItem value="sujet" label="Sujet" default>
+
+  </TabItem>
+  <TabItem value="correction" label="Correction">
+
+
+
+  </TabItem>
+  
+</Tabs>

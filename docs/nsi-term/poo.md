@@ -116,10 +116,62 @@ L'encapsulation est un principe qui consiste à regrouper des données avec un e
 
 :::
 
+## Quelques exemples
+
+```python
+# Définition de la classe Voiture
+class Voiture:
+
+    def __init__(self, marque, modele, annee):  # Constructeur
+        self.marque = marque  # Champ marque initialisé
+        self.modele = modele  # Champ modèle initialisé
+        self.annee = annee  # Champ année initialisé
+
+    def age(self):
+        """Méthode pour calculer l'âge de la voiture"""
+        current_year = 2024
+        return current_year - self.annee
+
+    def description(self):
+        """Méthode pour obtenir une description de la voiture"""
+        return f"{self.marque} {self.modele}, {self.age()} ans"
+
+# Utilisation de la classe
+v1 = Voiture("Toyota", "Corolla", 2015)
+v2 = Voiture("Tesla", "Model 3", 2020)
+
+print(v1.description())
+# Affiche "Toyota Corolla, 9 ans"
+print(v2.description())
+# Affiche "Tesla Model 3, 4 ans"
+```
+
+```python
+# Définition de la classe Personne
+class Personne:
+
+    def __init__(self, nom, age):  # Constructeur
+        self.nom = nom  # Champ nom initialisé
+        self.age = age  # Champ age initialisé
+
+    def est_majeur(self):
+        """Méthode pour vérifier si la personne est majeure"""
+        return self.age >= 18
+
+# Utilisation de la classe
+p1 = Personne("Alice", 17)
+p2 = Personne("Bob", 20)
+
+print(f"{p1.nom} est majeur ? {p1.est_majeur()}")
+# Affiche "Alice est majeur ? False"
+print(f"{p2.nom} est majeur ? {p2.est_majeur()}")
+# Affiche "Bob est majeur ? True"
+```
+
 ## Privé - Public
 
 :::tip Privé/Public en Python
-En Python, il y a une convention de nommage : un attribut privé est toujours préfixé (c'est-à-dire précédé) de deux espaces soulignés (tiret du bas, celui du 8).
+En Python, il y a une convention de nommage : un attribut privé est toujours préfixé (c'est-à-dire précédé) de deux espaces soulignés (tiret du bas, celui du 8). En anglais: `underscore`
 
 ```python
 self.attribut1 # Public

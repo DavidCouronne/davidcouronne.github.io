@@ -138,6 +138,8 @@ On peut aussi écrire un algorithme de seuil
 
 :::warning A connaitre
 
+```python
+
     #Algorithme de seuil
     from math import *
 
@@ -149,6 +151,7 @@ On peut aussi écrire un algorithme de seuil
         n = n+1
         u = 10*exp(3*n)
     print(n)
+```
 
 :::
 

@@ -51,11 +51,6 @@ module.exports = {
     // <meta name="robots" content="max-image-preview:large">
     metadata: [{ name: 'robots', content: 'max-image-preview:large' }],
 
-    prism: {
-      // theme: require('prism-react-renderer/themes/nightOwlLight'),
-      // darkTheme: require('prism-react-renderer/themes/dracula'),
-      theme: require('prism-react-renderer/themes/dracula'),
-    },
     navbar: {
       hideOnScroll: true,
       title: 'NSI-SNT',
@@ -81,6 +76,12 @@ module.exports = {
           docId: 'nsi-term/intro',
           position: 'left',
           label: 'NSI Term',
+        },
+        {
+          type: 'doc',
+          docId: 'annales/index',
+          position: 'left',
+          label: 'Annales',
         },
         {
           type: 'doc',
