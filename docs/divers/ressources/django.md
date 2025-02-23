@@ -1,7 +1,7 @@
 ---
 title: Python - Django
 description: Utilisation basqieude Django
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 ## Installation
