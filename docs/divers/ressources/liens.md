@@ -1,7 +1,7 @@
 ---
 title: Liens divers
 description: Une collection de liens utiles et variés pour des outils en ligne, ressources techniques et plus encore
-sidebar_position: 6
+sidebar_position: 4
 ---
 
 ## Introduction
