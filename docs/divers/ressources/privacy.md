@@ -1,7 +1,7 @@
 ---
 title: Sécurité et Confidentialité
 description: Ressources pour tester et améliorer votre sécurité et confidentialité en ligne
-sidebar_position: 5
+sidebar_position: 1
 ---
 
 ## Introduction
