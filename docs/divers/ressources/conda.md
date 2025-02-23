@@ -1,7 +1,7 @@
 ---
 title: Python - Conda, Miniconda, Anaconda
 description: Utilisation de conda, miniconda ou anaconda
-sidebar_position: 4
+sidebar_position: 6
 ---
 
 Documentation de référence: [https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#)
