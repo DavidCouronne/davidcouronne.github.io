@@ -1,6 +1,6 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import remarkMath from 'remark-math';
-import rehypeKatex from 'rehype-katex';
+import { themes as prismThemes } from 'prism-react-renderer'
+import remarkMath from 'remark-math'
+import rehypeKatex from 'rehype-katex'
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -85,13 +85,13 @@ const config = {
           },
           {
             type: 'docSidebar',
-            sidebarId: 'premiereSidebar',  // Mis à jour
+            sidebarId: 'premiereSidebar', // Mis à jour
             position: 'left',
             label: 'NSI 1ère',
           },
           {
             type: 'docSidebar',
-            sidebarId: 'termSidebar',  // Mis à jour
+            sidebarId: 'termSidebar', // Mis à jour
             position: 'left',
             label: 'NSI Term',
           },
@@ -109,11 +109,11 @@ const config = {
           },
           {
             type: 'docSidebar',
-            sidebarId: 'diversSidebar',  // Mis à jour
+            sidebarId: 'diversSidebar', // Mis à jour
             position: 'left',
             label: 'Ressources',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          { to: '/blog', label: 'Blog', position: 'left' },
           {
             href: 'https://github.com/DavidCouronne/davidcouronne.github.io',
             label: 'GitHub',
@@ -162,6 +162,6 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} NSI-SNT, Inc. Built with Docusaurus.`,
       },
     }),
-};
+}
 
-export default config;
+export default config
