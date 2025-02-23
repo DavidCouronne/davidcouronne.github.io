@@ -1,6 +1,6 @@
 ---
 title: Programme spé nsi et math 2023
-sidebar_position: 1
+sidebar_position: 8
 ---
 
 ## Lien officiel
