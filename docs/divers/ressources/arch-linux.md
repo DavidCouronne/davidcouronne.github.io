@@ -1,7 +1,7 @@
 ---
 title: Guide Arch Linux
 description: Guide pratique pour la configuration et l'administration d'Arch Linux
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 ## Introduction
