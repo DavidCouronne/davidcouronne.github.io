@@ -167,7 +167,7 @@ Cherchez l’IP locale (ex. 192.168.1.100 sur l’interface eth0 ou wlan0). Ou u
 hostname -I
 ```
 
-- Depuis un autre appareil sur le même réseau, ouvrez un navigateur à https://<votre_ip>:9090 (ex. https://192.168.1.100:9090). Connectez-vous avec vos identifiants.
+- Depuis un autre appareil sur le même réseau, ouvrez un navigateur à `https://<votre_ip>:9090` (ex. https://192.168.1.100:9090). Connectez-vous avec vos identifiants.
 
 :::note
 Si vous obtenez une erreur de connexion, vérifiez que le port 9090 est bien ouvert dans UFW et que votre pare-feu ou routeur ne bloque pas le trafic.
